@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/paper"
+    tools:context=".for_creating_notes">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_notes"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FFE0C7"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/back_btn"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/back_bttn"
+                android:padding="12dp"
+                android:contentDescription=" "/>
+
+            <ImageButton
+                android:id="@+id/edit_btn"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="77dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/ic_edit"
+                android:contentDescription=" "
+                android:padding="12dp" />
+
+            <ImageButton
+                android:id="@+id/save"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/ic_check_icon"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:contentDescription=" "/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittext_title"
+        android:hint="Title"
+        android:fontFamily="casual"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:singleLine="true"
+        android:background="@null"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="12dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittext_notes"
+        android:hint="Notes..."
+        android:padding="8dp"
+        android:textStyle="normal"
+        android:fontFamily="casual"
+        android:textSize="24sp"
+        android:background="@null"
+        android:layout_marginLeft="24dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:contentDescription=" "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="485dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/ic_add_icon"
+        android:backgroundTint="#FB9D54"
+        android:onClick="option_menu"
+        />
+
+</LinearLayout>
